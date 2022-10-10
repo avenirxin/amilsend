@@ -34,6 +34,10 @@ console.log("Server running on port: "+3000);
 
 }); 
 
+app.get('/',function(req,res){
+  res.send("Avenirx Connection successfull...")
+});
+
 app.post('/mail',async(req,res)=>{
 
     //read data from request
